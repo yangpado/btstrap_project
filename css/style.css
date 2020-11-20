@@ -1,0 +1,50 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+
+}
+body{
+    font-family: "DM sans", sans-serif;
+}
+
+/* reset CSS */
+a{
+    text-decoration: none;
+    color:inherit;
+}
+button,input,textarea{
+    font-family: "DM sans", sans-serif;
+    font-size:16px;
+}
+button:focus,button:active
+,input:focus,input:active
+,textarea:focus,textarea:active{
+    box-shadow: none;
+    outline: none;
+}
+ul,ol,li{
+    list-style: none;
+    padding-left:0;
+    margin-left:0;
+}
+p{
+    font-size:16px;
+    line-height: 1.5;
+    color:#2B292D;
+    letter-spacing: -0.01em;
+}
+/* 768px > (Desktop)*/
+@media screen and (min-width:768px){
+    p{
+        font-size:22px;
+        line-height: 1.45454545;
+    }
+}
+
+/* custom grid systems - fix container width */
+@media screen and (min-width:1200px){
+    .container{
+        max-width:960px !important;
+    }
+}
